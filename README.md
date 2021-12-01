@@ -18,13 +18,13 @@ Note that you need to take exactly one element from each list, not necessarily t
 Output Format
 Output a single integer denoting the value
 
-Ex:
+Ex:  <br />
 3 1000  <br />
 2 5 4  <br />
 3 7 8 9  <br />
 5 5 7 8 9 10  <br />
 
-First line: 3 = number of lists in K, 1000 = M
-second line to final line: first elem = number of elements in list, rest of line = list for that line
+First line: 3 = number of lists in K, 1000 = M  <br />
+second line to final line: first elem = number of elements in list, rest of line = list for that line  <br />
 
 Output for ex: 206 = (F(5) + F(9) + F(10)) % 1000
