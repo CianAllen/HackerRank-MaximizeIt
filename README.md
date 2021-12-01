@@ -8,7 +8,7 @@ You are given a function F(X) = square(X). You are also given k lists. The i lis
 You have to pick one element from each list so that the value from the equation below is maximized:
 S = (f(X) + f(x2).... + f(xi)) % M
 
-M is described in the first line of the input file
+M is described in the first line of the input file and
 K is the number of lists in the file
 
 % denotes the modulo operator.
