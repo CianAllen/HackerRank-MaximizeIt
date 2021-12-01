@@ -9,7 +9,6 @@
 '''
 
 '''imports'''
-import sys
 import random
 
 '''F(x)'''
@@ -22,16 +21,21 @@ def preprocess():
     k_lists=[]
     k=0
     m=0
-    for idx, line in enumerate(sys.stdin):
+    
+    # Using readlines()
+    file1 = open('input.txt', 'r')
+    Lines = file1.readlines()
+
+    for idx, line in enumerate(Lines):
         lis=line.split(" ")     
         
         '''remove new line characters'''
         if "\n" in lis[-1]:
-            lis[-1] = lis[-1][:-1] 
-            
-        '''convert elements to a list'''
-        ints = [int(item) for item in lis]
+            lis[-1] = lis[-1][:-1]
         
+        if lis[-1] == "":
+            lis=lis[:-1]
+            
         '''if first line, extract k and m, else get the list from the line'''
         if idx == 0:
             k, m = lis
@@ -251,5 +255,4 @@ if __name__ == "__main__":
     answer = pop.best_fitness
     solution = pop.best_solution
     print(answer)
-    #print(solution)a
-    
+    #print(solution)
