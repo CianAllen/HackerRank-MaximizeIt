@@ -19,10 +19,10 @@ Output Format
 Output a single integer denoting the value
 
 Ex:
-3 1000
-2 5 4
-3 7 8 9
-5 5 7 8 9 10
+3 1000\n
+2 5 4\n
+3 7 8 9\n
+5 5 7 8 9 10\n
 
 First line: 3 = number of lists in K, 1000 = M
 second line to final line: first elem = number of elements in list, rest of line = list for that line
