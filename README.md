@@ -16,15 +16,15 @@ K is the number of lists in the file
 Note that you need to take exactly one element from each list, not necessarily the largest element. You add the squares of the chosen elements and perform the modulo operation. The maximum value that you can obtain, will be the answer to the problem.
 
 Output Format
+Output a single integer denoting the value
 
-Output a single integer denoting the value .
-
-Sample Input
-
+Ex:
 3 1000
 2 5 4
-3 7 8 9 
-5 5 7 8 9 10 
-Sample Output
+3 7 8 9
+5 5 7 8 9 10
 
-206
+First line: 3 = number of lists in K, 1000 = M
+second line to final line: first elem = number of elements in list, rest of line = list for that line
+
+Output for ex: 206 = (F(5) + F(9) + F(10)) % 1000
